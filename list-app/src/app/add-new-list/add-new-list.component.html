@@ -1,0 +1,27 @@
+<form name="myForm">
+    <div class="wrapper">
+        <div class="close">
+            <input type="button" class="close" name="close" value="X"(click)="dismiss()">
+        </div>
+        <div class="id">
+            ID No...
+            <input type="text" name="id">
+          </div>
+        <div class="main">
+          Write Your Main Heading Here....
+          <input type="text" name="main">
+        </div>
+        <div class="sub">
+            Write Your Sub Heading Here....
+            <input type="text" name="sub">
+          </div>
+          <div class="content">
+              Write Your Content Here....
+              <input type="textarea" name="content">
+            </div>
+            <input class="add" type="button" name="add" value="ADD" (click)="addItem()">
+                  <input class="delete" type="button" name="delete" value="CANCEL" (click)="cancelItem()">
+    </div>
+</form>
+
+ 

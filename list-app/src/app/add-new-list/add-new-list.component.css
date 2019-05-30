@@ -1,0 +1,138 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: [col] 20% [col] 60% [col] 20%;
+    grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto;
+    background-color: #b5bdc9;
+    padding: 50px;
+}
+
+input{
+    width: 100%;
+    height: 10%;
+    border-radius: 1px;
+}
+
+.id{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: row 2;
+    width: 100%;
+    background-color: #878f9b;
+    border: 1px solid #636972;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-self: start;
+    align-self: center;
+    opacity: 1;
+}
+
+
+.main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: row 3;
+    width: 100%;
+    background-color: #878f9b;
+    border: 1px solid #636972;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-self: start;
+    align-self: center;
+    opacity: 1;
+}
+
+.sub{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: row 4;
+    width: 100%;
+    background-color: #878f9b;
+    border: 1px solid #636972;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    color:black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: start;
+    align-self: center;
+    opacity: 1;
+}
+
+.content{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: row 5;
+    /*height: 50px;*/
+    background-color: #878f9b;
+    border: 1px solid #636972;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    color:black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-self: start;
+    align-self: center;
+    opacity: 1;
+}
+
+.add{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: row 6;
+    justify-self: end;
+    align-self: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 2px;
+    background-color: #155918;
+    border: 1px solid #0c330e;
+    color: white;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.delete{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: row 6;
+    justify-self: center;
+    align-self: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 2px;
+    background-color: #9b0f07;
+    border: 1px solid #770903;
+    color: white;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.close{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: row;
+    justify-self: end;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+
+<div class="wrapper">
+  <div class="modal-wrapper" *ngIf="showModal">
+    <app-add-new-list (item)="addItem($event)" (close)="dismiss($event)"></app-add-new-list>
+  </div>
+  <div class="header-wrapper">
+      <app-header [newCount]="count" [total] = "listCount" (collapseEvent)="showContent($event)" (modal)="onPlusClick($event)"></app-header>
+  </div>
+  <div class="content-wrapper" *ngIf="show">
+    <div *ngFor="let list of lists">
+        <app-content [id]="list.id" [image]="list.image" [main]="list.main" [sub]="list.sub" [desc]="list.content | ellipse:[30, '...']" [date]="d" (delete)="deleteItem($event)"></app-content>
+    </div>
+    
+  </div>
+  <div class="footer-wrapper">
+    <app-footer (load)="showMore($event)"></app-footer>
+  </div>
+  </div>

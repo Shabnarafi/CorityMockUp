@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="list-name-wrapper">
+    <div class="list-name">
+      List Name
+    </div>
+    <div class="total">
+      Total {{total}}
+    </div>
+    
+  </div>
+  <div class="badge-wrapper">
+      <div class="badge">
+        {{newCount}}
+      </div>
+    </div>
+    <div class="plus-wrapper" (click)="showModal()">
+      <div class="plus">
+        +
+      </div>
+    </div>
+    <div class="downcaret-wrapper" (click)="collapse()" *ngIf="downCaret">
+        <div class="caret">&#9660;</div>
+    </div>
+    <div class="upcaret-wrapper" (click)="collapse()" *ngIf="upCaret">
+      <div class="caret">&#9650;</div>
+  </div>
+  
+</div>

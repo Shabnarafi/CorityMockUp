@@ -1,0 +1,56 @@
+<div class="wrapper" [id]="id">
+  <div class="image">
+    <img src="{{image}}" width="100" height="100"/>
+  </div>
+  <div class="content-wrapper" (click)="show = !show">
+    <div class="main">
+      <p>{{main}}</p>
+    </div>
+    <div class="sub">
+      {{sub}}
+    </div>
+    <div class="desc">
+      {{desc}}
+    </div>
+    <div class="date-wrapper">
+        &#x1f4c5; {{date}}
+    </div>
+  </div>
+  <div class="ellipses-wrapper" (click)="show = !show">
+      <div class="ellipses">&#8942;</div>
+      
+    </div>
+    <div class="button-wrapper" *ngIf="show">
+      <div class="download-button">
+          <div class="download-img">&#8681;</div>
+      </div>
+      <div class="delete-button" (click)="deleteItem($event)">
+        <div class="delete-icon" [id]="id">&#9249;</div>
+    </div>
+      
+    </div>   
+
+  </div>
+
+  <!--<div class="wrapper">
+      <div class="image">
+      </div>
+      <div class="content-wrapper">
+        <div class="main">
+          <p>s,vndssmbnsbnf</p>
+        </div>
+        <div class="sub">
+          snslvdvndslmblb
+        </div>
+        <div class="desc">
+          sndlvndlbnsbn
+        </div>
+        <div class="date-wrapper">
+            &#x1f4c5; Wed Jun 13 2019
+        </div>
+      </div>
+      <div class="ellipses-wrapper">
+        <div class="ellipses">&#8942;</div>
+      </div>
+    
+      </div>-->
